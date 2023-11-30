@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    animation: transitionIn 0.75s;
+}
+@keyframes transitionIn{
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    background: #f2f3f7;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.about .content img{
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+}
+
+.text{
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+    text-align: right;
+
+}
+
+.content{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-around;
+}
+
+
+.text h1{
+    color: #222;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.text h5{
+    color: #222;
+    font-size: 160x;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+button{
+    background: #f2f3f7;
+    color: #222;
+    box-shadow: -2px -2px 8px rgba(255,255,255,1),-2px -2px 12px rgba(255,255,255,0.5),inset 2px 2px 4px rgba(255,255,255,0.1),2px 2px 8px rgba(0,0,0,0.15);
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight:400 ;
+}
+
+button:active{
+    color: rgb(50, 207, 207);
+    box-shadow: inset -2px -2px 8px rgba(255,255,255,1),inset -2px -2px 12px rgba(255,255,255,0.5),inset 2px 2px 4px rgba(255,255,255,0.1),inset 2px 2px 8px rgba(0,0,0,0.15);
+}
+
+@media screen and (max-width: 1180px){
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .about .content img{
+        margin-bottom: 35px;
+    }
+    .text h1{
+        font-size: 65px;
+        margin-bottom: 25px;
+
+    }
+
+
+}
